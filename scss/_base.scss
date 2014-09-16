@@ -24,8 +24,31 @@ h1 {
     text-transform: capitalize;
 }
 
+a {
+    background-color: $background-color;
+    border-radius: 4px;
+    color: $color;
+    padding: 0 4px 2px 4px;
+    transition: background-color 300ms linear;
+    transition: color 300ms linear;
+
+}
+
+a:hover {
+    background-color: lighten($background-color, 5%);
+    color: lighten($color, 40%);
+    transition: background-color 300ms linear;
+    transition: color 300ms linear;
+}
+
+//ul {
+//    margin:0;
+//    padding:0;
+//    list-style-type:none;
+//}
+
 //p:first-of-type {
-//    @include fontSize(30px);
+//   @include fontSize(30px);
 //}
 
 //p:first-child {
@@ -33,5 +56,5 @@ h1 {
 //}
 
 //h1 + p {
-//   @include fontSize(24px);
+//   @include fontSize(30px);
 //}
